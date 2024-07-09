@@ -92,7 +92,9 @@ export default function HeroSection() {
 
           <div className="flex w-full mt-[60px] justify-center">
             <div className="bg-[#003B93] rounded-full py-1.5  px-4 mr-[24px]">
-              <a href="#contact">Download CV</a>
+              <a href="/nishi-resume.pdf" download>
+                Download CV
+              </a>
             </div>
             <div className="bg-[trasparent] rounded-full py-1.5  px-4 border">
               <a href="#contact">Contact me</a>

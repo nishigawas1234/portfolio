@@ -9,22 +9,22 @@ export default function Footer() {
     {
       isButton: false,
       icon: <LinkedIn height="40px" width="40px" />,
-      link: "",
+      link: "https://www.linkedin.com/in/nishigandha-gawas-868935203/",
     },
     {
       isButton: false,
       icon: <Insta height="40px" width="40px" />,
-      link: "",
+      link: "https://www.instagram.com/nishi.gawas/",
     },
     {
       isButton: false,
       icon: <Git height="40px" width="40px" />,
-      link: "",
+      link: "https://github.com/nishigawas1234",
     },
     {
       isButton: false,
       icon: <Email height="40px" width="48px" />,
-      link: "",
+      link: "mailto:gawasnishigandha@gmail.com",
     },
   ];
   return (
@@ -41,7 +41,7 @@ export default function Footer() {
                 <a
                   className="color-[#fff] text-md  duration-100 hover:scale-[1.09]"
                   key={i}
-                  href={`#${item.link}`}
+                  href={item.link}
                 >
                   {item.icon}
                 </a>
