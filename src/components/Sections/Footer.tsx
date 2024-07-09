@@ -29,9 +29,9 @@ export default function Footer() {
   ];
   return (
     <>
-      <div className="hidden md:block">
-        <div className="px-[80px]">
-          <div className=" h-[2px] w-full bg-[#9A9B9C]"></div>
+      <div className="hidden md:block pb-10 mt-[100px] bg-[url('/Images/bg.png')]">
+        <div className="">
+          <div className="h-[1px] w-full bg-[#9A9B9C]"></div>
           <div className="mt-10 text-center">
             <div className="text-[#ffffff] text-[18px] mb-[24px]">
               Follow me on
@@ -50,9 +50,12 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="block md:hidden px-5 mt-10">
-        <div className=" h-[2px] w-full bg-[#D117B8]"></div>
-        <div className="flex justify-between mt-5 ">
+      <div
+        className="block md:hidden mt-10 pb-5 bg-[url('/Images/bg.png')]"
+        style={{ backgroundPosition: "left" }}
+      >
+        <div className="h-[1px] w-full bg-[#9A9B9C]"></div>
+        <div className="flex justify-between mt-5 px-10">
           {navItems.map((item, i) => (
             <a
               className="color-[#fff] text-sm  duration-100 hover:scale-[1.09]"
@@ -62,9 +65,6 @@ export default function Footer() {
               {item.icon}
             </a>
           ))}
-        </div>
-        <div className="flex justify-center mt-8">
-          <img src="/images/logo.svg" alt="" height="40" width="40" />
         </div>
       </div>
     </>
