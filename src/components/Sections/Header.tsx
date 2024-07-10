@@ -54,7 +54,7 @@ export default function Header(props: any) {
                     "hover-underline-animation"
                   }  transition linear  ${
                     !item.isButton && item.title === props.viewSection
-                      ? "  border-[#D117B8]"
+                      ? "  border-[#3D8AFF]"
                       : "border-transparent"
                   }`}
                   onClick={() => props.setviewSection(item.title)}

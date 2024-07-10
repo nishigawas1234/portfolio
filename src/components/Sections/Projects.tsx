@@ -13,25 +13,18 @@ const Arrow = dynamic(() => import("../Icons/Arrow"));
 export default function Projects({ isAll }: { isAll?: boolean }) {
   const projects = [
     {
-      title: "Color Fusion",
-      href: "https://color-fusion.vercel.app",
+      title: "EMS",
+      href: "https://ems-ivory.vercel.app/",
       imageUrl: "/Images/Projects/EMS.png",
       detail:
-        "A web app named Color Fusion designed to help designers pick colors for their designs. Explore various color palettes and pre-defined components to experiment with and select the perfect color schemes for your design projects.",
+        "An employee management system named EMS is designed to track employees in an organization. With EMS, you can view detailed information about each employee, including their profiles, roles, project ,team and chapters",
     },
     {
-      title: "Taskblitz",
-      imageUrl: "/Images/Projects/EMS.png",
-      href: "https://taskblitz.vercel.app",
+      title: "Checkify",
+      href: "https://checkify-seven.vercel.app/login",
+      imageUrl: "/Images/Projects/checkify.png",
       detail:
-        "A web app called TaskBlitz designed to help users track their tasks efficiently. Organize and manage your tasks, set priorities, and track progress towards completion. Create and save new task lists based on existing tasks.",
-    },
-    {
-      title: "Movies Hub",
-      href: "https://movies-hub-fawn.vercel.app",
-      imageUrl: "/Images/Projects/EMS.png",
-      detail:
-        "A web app named Movies Hub that allows users to search for movies, watch trailers, and view ratings of each movie. The app also provides additional information like cast, directors, plot summaries, and user reviews to help users make informed decisions on what to watch. ",
+        "Checkify is a user-friendly task management and note-taking application that allows users to store their tasks as checklist items and keep notes. The application aims to provide a simple, intuitive interface for users to manage their daily activities and enhance productivity.",
     },
   ];
   const [projectData, setProjectData] = useState(projects);
@@ -106,7 +99,7 @@ export default function Projects({ isAll }: { isAll?: boolean }) {
         </div>
       </div>
       <div className="block md:hidden px-5 mt-10 relative" id="mobProjects">
-        <h1 className={`text-[40px] font-semibold text-[#fff] text-right`}>
+        <h1 className={`text-[40px] text-center  font-semibold text-[#fff]`}>
           My projects
         </h1>
         {projects.map((item, i) => (
