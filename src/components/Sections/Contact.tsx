@@ -161,6 +161,14 @@ export default function ContactForm() {
               </div>
             </form>
           </div>
+          <div>
+            <img
+              src="/Images/circleRight.png"
+              height={"700px"}
+              width={"700px"}
+              className="absolute	right-[-15%] top-[40%]"
+            />
+          </div>
         </div>
       </div>
       <div className="block md:hidden px-5 mt-10" id="mobContact">
