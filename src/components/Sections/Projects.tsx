@@ -85,17 +85,18 @@ export default function Projects({ isAll }: { isAll?: boolean }) {
                       {item.detail}
                     </CardItem>
 
-                    <div className="flex justify-between items-center mt-5">
+                    <div className="flex items-center mt-5">
                       <CardItem
                         translateZ={20}
                         as={Link}
                         e
                         href={`${item.href}`}
                         target="__blank"
-                        className=" py-2 rounded-xl text-sm font-normal  text-blue-500"
+                        className=" py-2 rounded-xl text-sm font-normal me-2  text-[#4E94FD]"
                       >
-                        Check Out
+                        Check Out{" "}
                       </CardItem>
+                      <Arrow height="20px" width="14px" color="#4E94FD" />
                     </div>
                   </CardBody>
                 </CardContainer>
@@ -151,7 +152,7 @@ export default function Projects({ isAll }: { isAll?: boolean }) {
         <button
           type="button"
           onClick={() => push("/projects")}
-          className="bg-[#d117b8] rounded-full py-1 px-6 text-[16px] w-auto mt-6 hover:translate-x-[10px] ease-out duration-100 flex items-center gap-4 mx-auto "
+          className="bg-gradient-to-r from-blue-600 to-blue-900 rounded-full py-1 px-6 text-[16px] w-auto mt-6 hover:translate-x-[10px] ease-out duration-100 flex items-center gap-4 mx-auto "
         >
           View All <Arrow height="30px" width="24px" color="#fff" />
         </button>
