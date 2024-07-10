@@ -107,7 +107,7 @@ export default function HeroSection() {
               src="/Images/circleRight.png"
               height={"700px"}
               width={"700px"}
-              className="absolute	right-[0] top-[10%]"
+              className="absolute	right-[-9%] top-[10%]"
             />
           </div>
         </div>

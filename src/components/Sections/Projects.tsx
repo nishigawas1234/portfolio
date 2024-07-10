@@ -26,6 +26,13 @@ export default function Projects({ isAll }: { isAll?: boolean }) {
       detail:
         "Checkify is a user-friendly task management and note-taking application that allows users to store their tasks as checklist items and keep notes. The application aims to provide a simple, intuitive interface for users to manage their daily activities and enhance productivity.",
     },
+    {
+      title: "My portfolio",
+      href: "https://nishiiiii.vercel.app/n",
+      imageUrl: "/Images/Projects/portfolio.png",
+      detail:
+        "Built a highly  interactive dashboard with React and Chart.js,  Features both dark and light themes, allowing users to switch based on preference or environment, enhancing usability and accessibility. ",
+    },
   ];
   const [projectData, setProjectData] = useState(projects);
 
@@ -51,7 +58,10 @@ export default function Projects({ isAll }: { isAll?: boolean }) {
           <div className="mt-24 w-[80%]">
             <div className="grid grid-cols-3 gap-4">
               {projects.map((item, i) => (
-                <CardContainer className="inter-var py-0 mt-5" key={i}>
+                <CardContainer
+                  className="inter-var h=[420px] py-0 mt-5"
+                  key={i}
+                >
                   <CardBody className="bg-black-50 relative group/card   dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-4 border  ">
                     <CardItem translateZ="100" className="w-full ">
                       <img
@@ -95,6 +105,14 @@ export default function Projects({ isAll }: { isAll?: boolean }) {
                 </CardContainer>
               ))}
             </div>
+          </div>
+          <div>
+            <img
+              src="/Images/circleLeft.png"
+              height={"700px"}
+              width={"700px"}
+              className="absolute	left-[-8%] top-[70%]"
+            />
           </div>
         </div>
       </div>

@@ -16,7 +16,10 @@ export default function Skill() {
     { label: "WORDPRESS", img: "Images/Skills/wordpress.png" },
   ];
   return (
-    <div className="px-20 w-full pt-[100px] hidden md:block" id="skills">
+    <div
+      className="px-20 w-full pt-[100px] hidden md:block relative"
+      id="skills"
+    >
       <div className="text-[65px] text-center font-semibold">Skills</div>
       <div className="mt-[60px] w-[80%] m-[auto]">
         <div className="grid grid-cols-6 gap-4">
@@ -28,6 +31,14 @@ export default function Skill() {
             );
           })}
         </div>
+      </div>
+      <div>
+        <img
+          src="/Images/circleRight.png"
+          height={"700px"}
+          width={"700px"}
+          className="absolute	right-[-9%] top-[60%]"
+        />
       </div>
     </div>
   );
