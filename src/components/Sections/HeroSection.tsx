@@ -134,6 +134,17 @@ export default function HeroSection() {
             ...with a keen eye for design and a love for creating intuitive user
             experiences
           </div>
+          <div className="flex w-full mt-[60px] justify-center">
+            <div className="bg-gradient-to-r from-blue-600 to-blue-900 hover:translate-x-[10px] ease-out duration-100 rounded-full py-1.5  px-4 mr-[24px]">
+              <a href="/nishi-resume.pdf" download>
+                Download CV
+              </a>
+            </div>
+            {/* <MovingBorderDemo label={"Download CV"} /> */}
+            <div className="bg-[trasparent] rounded-full ms-[18px] py-1.5 hover:translate-x-[10px] ease-out duration-100 px-4 border">
+              <a href="#contact">Contact me</a>
+            </div>
+          </div>
         </div>
       </div>
     </>
