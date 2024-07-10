@@ -77,16 +77,27 @@ export default function ContactForm() {
                 >
                   Full Name:
                 </label>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  value={formData.name}
-                  // placeholder="Enter name here..."
-                  onChange={handleChange}
-                  required
-                  className="mt-1 p-2 block w-full h-[50px] text-[#fff] rounded-md border border-[gradient-to-br from-blue-100 to-blue-800] bg-[transparent]"
-                />
+                <div className="relative">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    value={formData.name}
+                    // placeholder="Enter name here..."
+                    onChange={handleChange}
+                    required
+                    className="mt-1 p-2 block w-full duration-100 hover:scale-[1.05] h-[50px] text-[#fff] rounded-md border textLabel bg-[transparent]"
+                    style={{
+                      backgroundColor: "transparent",
+                      border:
+                        "1px solid transparent" /* Add transparent border for border-radius */,
+                      borderImage:
+                        "linear-gradient(90deg, rgba(173, 190, 252, 1), rgba(33, 91, 240, 1)) 1",
+                      borderRadius: "0.375rem" /* Apply border-radius */,
+                    }}
+                  />
+                  <div className="border-overlay"></div>
+                </div>
               </div>
               <div className="mb-4">
                 <label
@@ -95,16 +106,26 @@ export default function ContactForm() {
                 >
                   Email:
                 </label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  value={formData.email}
-                  // placeholder="Enter email here..."
-                  onChange={handleChange}
-                  required
-                  className="mt-1 p-2 block w-full h-[50px] text-[#fff] border rounded-md bg-[transparent]"
-                />
+                <div className="relative">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    className="mt-1 p-2 block w-full h-[50px] text-[#fff] duration-100 hover:scale-[1.05] textLabel rounded-md bg-transparent border-none"
+                    style={{
+                      backgroundColor: "transparent",
+                      border:
+                        "1px solid transparent" /* Add transparent border for border-radius */,
+                      borderImage:
+                        "linear-gradient(90deg, rgba(173, 190, 252, 1), rgba(33, 91, 240, 1)) 1",
+                      borderRadius: "0.375rem" /* Apply border-radius */,
+                    }}
+                  />
+                  <div className="border-overlay"></div>
+                </div>
               </div>
               <div className="mb-4">
                 <label
@@ -113,20 +134,29 @@ export default function ContactForm() {
                 >
                   Message:
                 </label>
-                <textarea
-                  style={{
-                    resize: "none",
-                  }}
-                  name="message"
-                  rows={8}
-                  cols={50}
-                  id="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  // placeholder="Enter message here..."
-                  required
-                  className="mt-1 p-2 block w-full h-[150px] text-[#fff] border rounded-md bg-[transparent]"
-                />
+                <div className="relative">
+                  <textarea
+                    name="message"
+                    rows={8}
+                    cols={50}
+                    id="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    // placeholder="Enter message here..."
+                    required
+                    className="mt-1 p-2 block w-full h-[150px] text-[#fff] duration-100 hover:scale-[1.05] border textLabel rounded-md bg-[transparent]"
+                    style={{
+                      resize: "none",
+                      backgroundColor: "transparent",
+                      border:
+                        "1px solid transparent" /* Add transparent border for border-radius */,
+                      borderImage:
+                        "linear-gradient(90deg, rgba(173, 190, 252, 1), rgba(33, 91, 240, 1)) 1",
+                      borderRadius: "0.375rem" /* Apply border-radius */,
+                    }}
+                  />
+                  <div className="border-overlay"></div>
+                </div>
               </div>
               <div className="text-center">
                 <button
@@ -160,8 +190,16 @@ export default function ContactForm() {
                 value={formData.name}
                 placeholder="Enter name here..."
                 onChange={handleChange}
+                style={{
+                  backgroundColor: "transparent",
+                  border:
+                    "1px solid transparent" /* Add transparent border for border-radius */,
+                  borderImage:
+                    "linear-gradient(90deg, rgba(173, 190, 252, 1), rgba(33, 91, 240, 1)) 1",
+                  borderRadius: "0.375rem" /* Apply border-radius */,
+                }}
                 required
-                className="mt-1 p-2 block w-full h-[50px] text-[#fff] rounded-md border border-[gradient-to-br from-blue-100 to-blue-800] bg-[transparent] focus:border-none outline-none"
+                className="mt-1 p-2 block w-full h-[50px] text-[#fff] rounded-md border textLabel bg-[transparent] focus:border-none outline-none"
               />
             </div>
             <div className="mb-4">
@@ -178,8 +216,16 @@ export default function ContactForm() {
                 value={formData.email}
                 placeholder="Enter email here..."
                 onChange={handleChange}
+                style={{
+                  backgroundColor: "transparent",
+                  border:
+                    "1px solid transparent" /* Add transparent border for border-radius */,
+                  borderImage:
+                    "linear-gradient(90deg, rgba(173, 190, 252, 1), rgba(33, 91, 240, 1)) 1",
+                  borderRadius: "0.375rem" /* Apply border-radius */,
+                }}
                 required
-                className="mt-1 p-2 block w-full h-[50px] text-[#fff] rounded-md border border-[gradient-to-br from-blue-100 to-blue-800] bg-[transparent] focus:border-none outline-none"
+                className="mt-1 p-2 block w-full h-[50px] text-[#fff] rounded-md border textLabel bg-[transparent] focus:border-none outline-none"
               />
             </div>
             <div className="mb-4">
@@ -190,9 +236,6 @@ export default function ContactForm() {
                 Message:
               </label>
               <textarea
-                style={{
-                  resize: "none",
-                }}
                 name="message"
                 rows={8}
                 cols={50}
@@ -201,7 +244,16 @@ export default function ContactForm() {
                 onChange={handleChange}
                 placeholder="Enter message here..."
                 required
-                className="mt-1 p-2 block w-full h-[150px] text-[#fff] rounded-md border border-[gradient-to-br from-blue-100 to-blue-800] bg-[transparent] focus:border-none outline-none"
+                style={{
+                  resize: "none",
+                  backgroundColor: "transparent",
+                  border:
+                    "1px solid transparent" /* Add transparent border for border-radius */,
+                  borderImage:
+                    "linear-gradient(90deg, rgba(173, 190, 252, 1), rgba(33, 91, 240, 1)) 1",
+                  borderRadius: "0.375rem" /* Apply border-radius */,
+                }}
+                className="mt-1 p-2 block w-full h-[150px] text-[#fff] rounded-md border textLabel bg-[transparent] focus:border-none outline-none"
               />
             </div>
             <div className="text-center">

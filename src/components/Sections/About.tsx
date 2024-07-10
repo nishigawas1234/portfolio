@@ -19,7 +19,7 @@ export default function About() {
               collaborate and create something awesome together!
             </div>
           </div>
-          <div className="w-[40%]">
+          <div className="w-[40%] hover:translate-x-[10px] ease-out duration-100">
             <img src="/Images/about.png" alt="about image" />
           </div>
         </div>

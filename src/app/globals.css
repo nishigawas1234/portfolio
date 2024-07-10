@@ -50,3 +50,34 @@ body {
   border-radius: 10px;
 }
 
+.skillBox{
+  background: rgb(5,10,18);
+  background: linear-gradient(180deg, rgba(5,10,18,1) 0%, rgba(6,19,47,1) 50%);
+}
+
+.textLabel{
+  background-color: "transparent";
+  border : "1px solid transparent";
+  border-image: "linear-gradient(90deg, rgba(173, 190, 252, 1), rgba(33, 91, 240, 1)) 1";
+  border-radius: "0.375rem";
+
+}
+
+.textLabel:focus {
+  border: 1px solid transparent; /* Ensure the border is still transparent */
+  border-image: linear-gradient(90deg, rgba(173, 190, 252, 1), rgba(33, 91, 240, 1)) 1;
+  border-radius: 0.375rem; /* Apply the border-radius */
+  outline: none; /* Remove the default outline */
+}
+
+
+.border-overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid;
+  border-image: linear-gradient(90deg, rgba(173, 190, 252, 1), rgba(33, 91, 240, 1)) 1;
+  border-radius: 0.375rem;
+  z-index: 1;
+}
