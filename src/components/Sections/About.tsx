@@ -39,6 +39,14 @@ export default function About() {
               </div>
             </motion.h1>
           </div>
+          <div>
+            <img
+              src="/Images/circleLeft.png"
+              height={"700px"}
+              width={"700px"}
+              className="absolute	left-[-8%] top-[40%]"
+            />
+          </div>
           <div className="w-[40%] hover:translate-x-[10px] ease-out duration-100">
             <img src="/Images/about.png" alt="about image" />
           </div>
@@ -62,13 +70,6 @@ export default function About() {
             }}
           >
             {" "}
-            <div className="w-[100%] flex justify-center hover:translate-x-[10px] ease-out duration-100">
-              <img
-                src="/Images/about_mob2.png"
-                alt="about image"
-                style={{ height: "350px" }}
-              />
-            </div>
             <div className="text-[16px] text-[#A5A0A0] font-normal text-center">
               A frontend developer who is passionate about crafting beautiful
               and user-friendly websites. With 2+ years of experience in the
