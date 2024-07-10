@@ -16,7 +16,7 @@ export default function Skill() {
     { label: "WORDPRESS", img: "Images/Skills/wordpress.png" },
   ];
   return (
-    <div className="px-20 w-full pt-[100px] hidden md:block">
+    <div className="px-20 w-full pt-[100px] hidden md:block" id="skills">
       <div className="text-[65px] text-center font-semibold">Skills</div>
       <div className="mt-[60px] w-[80%] m-[auto]">
         <div className="grid grid-cols-6 gap-4">

@@ -2,6 +2,7 @@ import React from "react";
 import { TypewriterEffect } from "../Effects/typewriter-effect";
 import { ReactTyped } from "react-typed";
 import Image from "next/image";
+import { MovingBorderDemo } from "../MovingBorderButton";
 
 export default function HeroSection() {
   const socialMedia = [
@@ -96,7 +97,8 @@ export default function HeroSection() {
                 Download CV
               </a>
             </div>
-            <div className="bg-[trasparent] rounded-full py-1.5 hover:translate-x-[10px] ease-out duration-100 px-4 border">
+            {/* <MovingBorderDemo label={"Download CV"} /> */}
+            <div className="bg-[trasparent] rounded-full ms-[18px] py-1.5 hover:translate-x-[10px] ease-out duration-100 px-4 border">
               <a href="#contact">Contact me</a>
             </div>
           </div>

@@ -8,6 +8,7 @@ import HeroSection from "@/components/Sections/HeroSection";
 import Projects from "@/components/Sections/Projects";
 import Skill from "@/components/Sections/Skill";
 import Image from "next/image";
+import { TracingBeam } from "../components/Effects/tracing-beam";
 import { SetStateAction, useEffect, useRef, useState } from "react";
 
 export default function Home() {
@@ -54,6 +55,7 @@ export default function Home() {
       }}
       className="bg-[#0A0A0A] pt-10"
     >
+      {/* <TracingBeam className="px-6"> */}
       <div
         style={{
           backgroundPosition: "center",
@@ -118,6 +120,7 @@ export default function Home() {
         <ContactForm />
         <Footer />
       </div>
+      {/* </TracingBeam> */}
     </main>
   );
 }
