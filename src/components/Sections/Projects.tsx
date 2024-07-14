@@ -160,13 +160,13 @@ export default function Projects({ isAll }: { isAll?: boolean }) {
             </CardBody>
           </CardContainer>
         ))}
-        <button
+        {/* <button
           type="button"
           onClick={() => push("/projects")}
           className="bg-gradient-to-r from-blue-600 to-blue-900 rounded-full py-1 px-6 text-[16px] w-auto mt-6 hover:translate-x-[10px] ease-out duration-100 flex items-center gap-4 mx-auto "
         >
           View All <Arrow height="30px" width="24px" color="#fff" />
-        </button>
+        </button> */}
       </div>
     </>
   );

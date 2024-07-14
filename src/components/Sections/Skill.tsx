@@ -1,5 +1,6 @@
 import React from "react";
 import SkillBox from "../SkillBox";
+import { AnimatedTooltip } from "../Effects/animated-tooltip";
 
 export default function Skill() {
   const skills = [
@@ -15,31 +16,109 @@ export default function Skill() {
     { label: "ANGULAR", img: "Images/Skills/icons8-angularjs-144.png" },
     { label: "WORDPRESS", img: "Images/Skills/wordpress.png" },
   ];
+
+  const people = [
+    {
+      id: 1,
+      name: "HTML",
+      designation: "Software Engineer",
+      image: "/Images/Skills/icons8-html-logo-144.png",
+    },
+    {
+      id: 2,
+      name: "CSS",
+      designation: "Product Manager",
+      image: "/Images/Skills/icons8-css-logo-144.png",
+    },
+    {
+      id: 3,
+      name: "REACT",
+      designation: "Product Manager",
+      image: "/Images/Skills/icons8-react-200.png",
+    },
+    {
+      id: 4,
+      name: "JAVASCRIPT",
+      designation: "Product Manager",
+      image: "/Images/Skills/icons8-javascript-144.png",
+    },
+    {
+      id: 5,
+      name: "BOOTSTRAP",
+      designation: "Product Manager",
+      image: "/Images/Skills/icons8-bootstrap-logo-144.png",
+    },
+    {
+      id: 6,
+      name: "CHAKRA UI",
+      designation: "Product Manager",
+      image: "/Images/Skills/icons8-chakra-ui-144.png",
+    },
+    {
+      id: 7,
+      name: "TYPESCRIPT",
+      designation: "Product Manager",
+      image: "/Images/Skills/Ts.png",
+    },
+    {
+      id: 8,
+      name: "NEXTJS",
+      designation: "Product Manager",
+      image: "/Images/Skills/Nextjs.png",
+    },
+    {
+      id: 9,
+      name: "GITHUB",
+      designation: "Product Manager",
+      image: "/Images/Skills/Git.png",
+    },
+    {
+      id: 10,
+      name: "ANGULAR",
+      designation: "Product Manager",
+      image: "/Images/Skills/icons8-angularjs-144.png",
+    },
+    {
+      id: 11,
+      name: "WORDPRESS",
+      designation: "Product Manager",
+      image: "/Images/Skills/wordpress.png",
+    },
+  ];
+
   return (
-    <div
-      className="px-20 w-full pt-[100px] hidden md:block relative"
-      id="skills"
-    >
-      <div className="text-[65px] text-center font-semibold">Skills</div>
-      <div className="mt-[60px] w-[80%] m-[auto]">
-        <div className="grid grid-cols-6 gap-4">
-          {skills.map(({ img, label }, i) => {
-            return (
-              <div className="" key={i}>
-                <SkillBox img={img} label={label} />
-              </div>
-            );
-          })}
+    <>
+      <div
+        className="hidden md:block px-4 sm:px-8 md:px-12 lg:px-20 w-full pt-16 md:pt-24 lg:pt-[100px] relative"
+        id="skills"
+      >
+        <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-center">
+          Skills
+        </div>
+        <div className="mt-8 md:mt-12 lg:mt-[60px] flex flex-wrap justify-center gap-12 w-[80%] m-[auto]">
+          {skills.map(({ img, label }, i) => (
+            <div className="flex-shrink-0" key={i}>
+              <SkillBox img={img} label={label} />
+            </div>
+          ))}
+        </div>
+        <div>
+          <img
+            src="/Images/circleRight.png"
+            alt="Decorative Circle"
+            className="absolute right-[-10%] md:right-[-5%] lg:right-[-9%] top-1/2 transform -translate-y-1/2 hidden md:block"
+            style={{ height: "auto", width: "50%" }}
+          />
         </div>
       </div>
-      <div>
-        <img
-          src="/Images/circleRight.png"
-          height={"700px"}
-          width={"700px"}
-          className="absolute	right-[-9%] top-[60%]"
-        />
-      </div>
-    </div>
+      {/* <div className="block md:hidden">
+        <div className="text-[40px] mb-5 text-center font-semibold text-center">
+          Skills
+        </div>
+        <div className="flex flex-row items-center justify-center mb-10 w-full">
+          <AnimatedTooltip items={people} />
+        </div>
+      </div> */}
+    </>
   );
 }
