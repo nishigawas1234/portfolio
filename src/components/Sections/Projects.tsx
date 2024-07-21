@@ -26,13 +26,13 @@ export default function Projects({ isAll }: { isAll?: boolean }) {
       detail:
         "Checkify is a user-friendly task management and note-taking application that allows users to store their tasks as checklist items and keep notes. The application aims to provide a simple, intuitive interface for users to manage their daily activities and enhance productivity.",
     },
-    {
-      title: "My portfolio",
-      href: "https://nishiiiii.vercel.app/n",
-      imageUrl: "/Images/Projects/portfolio.png",
-      detail:
-        "Built a highly  interactive dashboard with React and Chart.js,  Features both dark and light themes, allowing users to switch based on preference or environment, enhancing usability and accessibility. ",
-    },
+    // {
+    //   title: "My portfolio",
+    //   href: "https://nishiiiii.vercel.app/n",
+    //   imageUrl: "/Images/Projects/portfolio.png",
+    //   detail:
+    //     "Built a highly  interactive dashboard with React and Chart.js,  Features both dark and light themes, allowing users to switch based on preference or environment, enhancing usability and accessibility. ",
+    // },
   ];
   const [projectData, setProjectData] = useState(projects);
 
