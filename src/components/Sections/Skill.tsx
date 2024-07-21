@@ -111,14 +111,17 @@ export default function Skill() {
           />
         </div>
       </div>
-      {/* <div className="block md:hidden">
+      <div className="block md:hidden mt-[60px]" id="mobSkills">
         <div className="text-[40px] mb-5 text-center font-semibold text-center">
           Skills
         </div>
         <div className="flex flex-row items-center justify-center mb-10 w-full">
-          <AnimatedTooltip items={people} />
+          <AnimatedTooltip items={people.slice(0 ,5)} />
         </div>
-      </div> */}
+        <div className="flex flex-row items-center justify-center mb-10 w-full">
+          <AnimatedTooltip items={people.slice(5)} />
+        </div>
+      </div>
     </>
   );
 }
