@@ -92,7 +92,7 @@ export default function HeroSection() {
           </div>
 
           <div className="flex w-full mt-[60px] justify-center">
-            <div className="bg-gradient-to-r from-blue-600 to-blue-900 hover:translate-x-[10px] ease-out duration-100 rounded-full py-1.5  px-4 mr-[24px]">
+            <div className="bg-gradient-to-r from-blue-600 to-blue-900 hover:translate-x-[10px] ease-out duration-100 rounded-full py-1.5  px-4">
               <a href="/nishi-resume.pdf" download>
                 Download CV
               </a>
@@ -135,7 +135,7 @@ export default function HeroSection() {
             experiences
           </div>
           <div className="flex w-full mt-[60px] justify-center">
-            <div className="bg-gradient-to-r from-blue-600 to-blue-900 hover:translate-x-[10px] ease-out duration-100 rounded-full py-1.5  px-4 mr-[24px]">
+            <div className="bg-gradient-to-r from-blue-600 to-blue-900 hover:translate-x-[10px] ease-out duration-100 rounded-full py-1.5  px-4">
               <a href="/nishi-resume.pdf" download>
                 Download CV
               </a>

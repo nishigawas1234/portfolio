@@ -171,11 +171,11 @@ export default function ContactForm() {
           </div>
         </div>
       </div>
-      <div className="block md:hidden px-5 mt-10" id="mobContact">
+      <div className="block md:hidden px-5 mt-14" id="mobContact">
         <h1 className="text-[32px] font-semibold text-[#fff] text-center ">
           Contact Me
         </h1>
-        <div className="w-[100%] m-auto mt-[30px]">
+        <div className="w-[100%] m-auto mt-5">
           <form onSubmit={handleSubmit} ref={form} className="space-y-4">
             <div className="mb-4">
               <label

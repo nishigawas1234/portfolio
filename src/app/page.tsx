@@ -74,7 +74,10 @@ export default function Home() {
           } duration-300 ease-linear delay-0`}
         >
           <div className="flex justify-between w-full px-5 mt-10">
+            <a href="/"> 
             <img src="/Images/logo.png" alt="" height="40" width="40" />
+            </a>
+           
             <CrossSolid
               height="18px"
               width="18px"
@@ -90,7 +93,7 @@ export default function Home() {
                 key={i}
                 className={`${
                   item.title.toLowerCase() === viewSection.toLowerCase()
-                    ? "text-[60px] text-[#BB64FF] font-semibold"
+                    ? "text-[60px] text-[#3D8AFF] font-semibold"
                     : "text-[40px] text-[#fff] font-medium"
                 } mt-2`}
                 onClick={() => {

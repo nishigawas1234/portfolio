@@ -52,7 +52,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="block md:hidden">
+      <div className="block md:hidden pt-10" id="mobAbout">
         <div className="w-[100%] m-[auto] p-10">
           <div className="text-[32px] text-center font-semibold">About Me</div>
           <motion.h1
@@ -69,7 +69,9 @@ export default function About() {
               ease: [0.4, 0.0, 0.2, 1],
             }}
           >
-            {" "}
+          <div className="w-[100%] mb-5 hover:translate-x-[10px] ease-out duration-100 flex justify-center">
+            <img src="/Images/about_mob2.png" style={{height:"250px"}} alt="about image" />
+          </div>
             <div className="text-[16px] text-[#A5A0A0] font-normal text-center">
               A frontend developer who is passionate about crafting beautiful
               and user-friendly websites. With 2+ years of experience in the

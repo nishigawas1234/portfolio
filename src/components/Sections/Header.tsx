@@ -38,12 +38,14 @@ export default function Header(props: any) {
           <div
             className={`flex items-center justify-between w-full px-4	bg-black bg-opacity-60 shadow-lg rounded-full border border-opacity-50 border-[#dfdef71c] backdrop-filter hover:scale-[1.05] ease-out duration-100	`}
           >
+                  <a href="/"> 
             <img
               src="/Images/logo.png"
               alt=""
               height="fit-content"
               style={{ height: "28px" }}
             />
+            </a>
             <div className="flex justify-between items-center gap-10  text-[14px]">
               {navItems.map((item, i) => (
                 <div
@@ -75,7 +77,9 @@ export default function Header(props: any) {
 
       <div className="block md:hidden relative">
         <div className="flex justify-between w-full px-4 ">
-          <img src="/Images/logo.png" alt="" height="40" width="40" />
+        <a href="/"> 
+          <img src="/Images/logo.png" alt="logo" height="40" width="40" />
+          </a>
           <MenuIcon
             height="34px"
             width="34px"

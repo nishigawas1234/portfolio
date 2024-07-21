@@ -116,7 +116,7 @@ export default function Projects({ isAll }: { isAll?: boolean }) {
           </div>
         </div>
       </div>
-      <div className="block md:hidden px-5 mt-10 relative" id="mobProjects">
+      <div className="block md:hidden px-5 mt-20 relative" id="mobProjects">
         <h1 className={`text-[40px] text-center  font-semibold text-[#fff]`}>
           My projects
         </h1>
@@ -124,13 +124,15 @@ export default function Projects({ isAll }: { isAll?: boolean }) {
           <CardContainer className="inter-var py-0 mt-5" key={i}>
             <CardBody className="bg-black-50 relative group/card   dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-4 border  ">
               <CardItem translateZ="100" className="w-full ">
-                <Image
-                  src={`${item.imageUrl}`}
-                  height="250"
-                  width="25"
-                  className="h-[150px] w-full object-cover rounded-xl group-hover/card:shadow-xl"
-                  alt="thumbnail"
-                />
+              <img
+                        src={`${item.imageUrl}`}
+                        style={{
+                          height: "150px",
+                          width: "inherit",
+                        }}
+                        className="h-[150px] w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                        alt="thumbnail"
+                      />
               </CardItem>
               <CardItem
                 translateZ="50"
