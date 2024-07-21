@@ -26,6 +26,7 @@ export default function Projects({ isAll }: { isAll?: boolean }) {
       detail:
         "Checkify is a user-friendly task management and note-taking application that allows users to store their tasks as checklist items and keep notes. The application aims to provide a simple, intuitive interface for users to manage their daily activities and enhance productivity.",
     },
+    // Uncomment and update the following project if needed
     // {
     //   title: "My portfolio",
     //   href: "https://nishiiiii.vercel.app/n",
@@ -42,12 +43,12 @@ export default function Projects({ isAll }: { isAll?: boolean }) {
     } else {
       setProjectData(projects.slice(0, 3));
     }
-  }, []);
-  const { push } = useRouter();
+  }, [isAll]);
+
   return (
     <>
-      <div className="hidden md:block">
-        <div className="relative py-[100px] px-20" id="projects">
+      <div className="hidden md:block relative">
+        <div className="py-[100px] px-20" id="projects">
           <h1
             className={`text-[65px] font-semibold text-[#fff] ${
               isAll ? "text-center" : "text-right"
@@ -55,21 +56,19 @@ export default function Projects({ isAll }: { isAll?: boolean }) {
           >
             My projects
           </h1>
-          <div className="mt-24 w-[80%]">
+          <div className="mt-24 w-[80%] relative z-10">
             <div className="grid grid-cols-3 gap-4">
               {projects.map((item, i) => (
                 <CardContainer
                   className="inter-var h=[420px] py-0 mt-5"
                   key={i}
                 >
-                  <CardBody className="bg-black-50 relative group/card   dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-4 border  ">
-                    <CardItem translateZ="100" className="w-full ">
-                      <img
-                        src={`${item.imageUrl}`}
-                        style={{
-                          height: "250px",
-                          width: "inherit",
-                        }}
+                  <CardBody className="bg-black-50 relative group/card dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-4 border">
+                    <CardItem translateZ="100" className="w-full">
+                      <Image
+                        src={item.imageUrl}
+                        height="250"
+                        width="250"
                         className="h-[150px] w-full object-cover rounded-xl group-hover/card:shadow-xl"
                         alt="thumbnail"
                       />
@@ -87,15 +86,13 @@ export default function Projects({ isAll }: { isAll?: boolean }) {
                     >
                       {item.detail}
                     </CardItem>
-
-                    <div className="flex items-center mt-5">
+                    <div className="flex items-center mt-5 z-10">
                       <CardItem
                         translateZ={20}
                         as={Link}
-                        e
-                        href={`${item.href}`}
-                        target="__blank"
-                        className=" py-2 rounded-xl text-sm font-normal me-2  text-[#4E94FD]"
+                        href={item.href}
+                        target="_blank"
+                        className="py-2 rounded-xl text-sm font-normal me-2 text-[#4E94FD]"
                       >
                         Check Out{" "}
                       </CardItem>
@@ -106,33 +103,31 @@ export default function Projects({ isAll }: { isAll?: boolean }) {
               ))}
             </div>
           </div>
-          <div>
-            <img
+          <div className="absolute left-[-8%] top-[70%] z-0">
+            <Image
               src="/Images/circleLeft.png"
-              height={"700px"}
-              width={"700px"}
-              className="absolute	left-[-8%] top-[70%]"
+              height={700}
+              width={700}
+              alt="decorative circle"
             />
           </div>
         </div>
       </div>
       <div className="block md:hidden px-5 mt-20 relative" id="mobProjects">
-        <h1 className={`text-[40px] text-center  font-semibold text-[#fff]`}>
+        <h1 className={`text-[40px] text-center font-semibold text-[#fff]`}>
           My projects
         </h1>
-        {projects.map((item, i) => (
+        {projectData.map((item, i) => (
           <CardContainer className="inter-var py-0 mt-5" key={i}>
-            <CardBody className="bg-black-50 relative group/card   dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-4 border  ">
-              <CardItem translateZ="100" className="w-full ">
-              <img
-                        src={`${item.imageUrl}`}
-                        style={{
-                          height: "150px",
-                          width: "inherit",
-                        }}
-                        className="h-[150px] w-full object-cover rounded-xl group-hover/card:shadow-xl"
-                        alt="thumbnail"
-                      />
+            <CardBody className="bg-black-50 relative group/card dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-4 border">
+              <CardItem translateZ="100" className="w-full">
+                <Image
+                  src={item.imageUrl}
+                  height="150"
+                  width="150"
+                  className="h-[150px] w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                  alt="thumbnail"
+                />
               </CardItem>
               <CardItem
                 translateZ="50"
@@ -147,14 +142,13 @@ export default function Projects({ isAll }: { isAll?: boolean }) {
               >
                 {item.detail}
               </CardItem>
-
-              <div className="flex justify-between items-center mt-5">
+              <div className="flex justify-between items-center mt-5 z-10">
                 <CardItem
                   translateZ={20}
                   as={Link}
-                  href={`${item.href}`}
-                  target="__blank"
-                  className=" py-2 rounded-xl text-sm font-normal  text-blue-500"
+                  href={item.href}
+                  target="_blank"
+                  className="py-2 rounded-xl text-sm font-normal text-blue-500"
                 >
                   Visit now
                 </CardItem>
@@ -162,13 +156,6 @@ export default function Projects({ isAll }: { isAll?: boolean }) {
             </CardBody>
           </CardContainer>
         ))}
-        {/* <button
-          type="button"
-          onClick={() => push("/projects")}
-          className="bg-gradient-to-r from-blue-600 to-blue-900 rounded-full py-1 px-6 text-[16px] w-auto mt-6 hover:translate-x-[10px] ease-out duration-100 flex items-center gap-4 mx-auto "
-        >
-          View All <Arrow height="30px" width="24px" color="#fff" />
-        </button> */}
       </div>
     </>
   );
