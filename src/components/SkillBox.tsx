@@ -16,7 +16,7 @@ export default function SkillBox({
             <img height="76" src={img} style={{ height: "76px" }} />
           </CardItem>
 
-          <div className="rounded-lg p-[8px] bg-[#000000] text-center">
+          <div className="text-[#fff] rounded-lg p-[8px] bg-[#000000] text-center">
             {label}
           </div>
         </div>

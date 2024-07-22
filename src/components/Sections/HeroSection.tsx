@@ -34,11 +34,11 @@ export default function HeroSection() {
   const words = [
     {
       text: "Hey,",
-      className: "text-[40px]",
+      className: "text-[40px] text-[#fff]",
     },
     {
       text: "I'm",
-      className: "text-[40px]",
+      className: "text-[40px] text-[#fff]",
     },
     {
       text: "Nishi",
@@ -48,11 +48,11 @@ export default function HeroSection() {
   const mobWords = [
     {
       text: "Hello,",
-      className: "text-[32px]",
+      className: "text-[32px] text-[#fff]",
     },
     {
       text: "I'm",
-      className: "text-[32px]",
+      className: "text-[32px] text-[#fff]",
     },
     {
       text: "Nishi",
@@ -67,7 +67,7 @@ export default function HeroSection() {
           id="home"
         >
           <div className="flex w-full">
-            <div className="w-[100%] text-center">
+            <div className="w-[100%] text-center text-[#fff]">
               <TypewriterEffect
                 words={words}
                 className="text-[40px] text-[#ffffff] mb-3 text-center"
@@ -92,13 +92,13 @@ export default function HeroSection() {
           </div>
 
           <div className="flex w-full mt-[60px] justify-center">
-            <div className="bg-gradient-to-r from-blue-600 to-blue-900 hover:translate-x-[10px] ease-out duration-100 rounded-full py-1.5  px-4">
+            <div className="bg-gradient-to-r text-[#fff] from-blue-600 to-blue-900 hover:translate-x-[10px] ease-out duration-100 rounded-full py-1.5  px-4">
               <a href="/nishi-resume.pdf" download>
                 Download CV
               </a>
             </div>
             {/* <MovingBorderDemo label={"Download CV"} /> */}
-            <div className="bg-[trasparent] rounded-full ms-[18px] py-1.5 hover:translate-x-[10px] ease-out duration-100 px-4 border">
+            <div className="bg-[trasparent] text-[#fff] rounded-full ms-[18px] py-1.5 hover:translate-x-[10px] ease-out duration-100 px-4 border">
               <a href="#contact">Contact me</a>
             </div>
           </div>
