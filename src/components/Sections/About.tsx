@@ -10,7 +10,7 @@ export default function About() {
       <div className="px-20 w-full pt-[100px] hidden md:block relative">
         <div className="flex w-[70%] m-[auto]" id="about">
           <div className="w-[60%] m-[auto] p-10">
-            <div className="text-[65px] font-semibold">About Me</div>
+            <div className="text-[65px] font-semibold text-[#fff]">About Me</div>
             {/* <TextGenerateEffect words={words} /> */}
             <motion.h1
               initial={{
@@ -54,7 +54,7 @@ export default function About() {
       </div>
       <div className="block md:hidden pt-10" id="mobAbout">
         <div className="w-[100%] m-[auto] p-10">
-          <div className="text-[32px] text-center font-semibold">About Me</div>
+          <div className="text-[32px] text-center text-[#fff] font-semibold">About Me</div>
           <motion.h1
             initial={{
               opacity: 0,

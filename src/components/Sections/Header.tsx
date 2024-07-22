@@ -36,7 +36,7 @@ export default function Header(props: any) {
       <div className="hidden md:block">
         <div className="px-20">
           <div
-            className={`flex items-center justify-between w-full px-4	bg-black bg-opacity-60 shadow-lg rounded-full border border-opacity-50 border-[#dfdef71c] backdrop-filter hover:scale-[1.05] ease-out duration-100	`}
+            className={`flex items-center text-[#fff] justify-between w-full px-4	bg-black bg-opacity-60 shadow-lg rounded-full border border-opacity-50 border-[#dfdef71c] backdrop-filter hover:scale-[1.05] ease-out duration-100	`}
           >
                   <a href="/"> 
             <img
