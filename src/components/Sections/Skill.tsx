@@ -92,7 +92,7 @@ export default function Skill() {
         className="hidden md:block px-4 sm:px-8 md:px-12 lg:px-20 w-full pt-16 md:pt-24 lg:pt-[100px] relative"
         id="skills"
       >
-        <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-center">
+        <div className="text-3xl sm:text-4xl text-[#fff] md:text-5xl lg:text-6xl font-semibold text-center">
           Skills
         </div>
         <div className="mt-8 md:mt-12 lg:mt-[60px] flex flex-wrap justify-center gap-12 w-[80%] m-[auto]">
